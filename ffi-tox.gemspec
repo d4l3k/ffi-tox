@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
 	s.name		= 'ffi-tox'
-	s.version	= '0.1.1'
-	s.date		= '2013-07-30'
+	s.version	= '0.1.2'
+	s.date		= '2013-08-01'
 	s.summary	= "Tox bindings"
 	s.description	= "Ruby FFI bindings to Tox"
 	s.authors	= ["Tristan Rice"]

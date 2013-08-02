@@ -8,11 +8,7 @@ module Tox
                 uint16_t = :uint16
                 uint32_t = :uint32
                 attach_variable 'self_public_key', FFI::ArrayType.new(FFI::TYPE_UINT8,32)
-#                attach_variable 'self_name', :uint8
-#                attach_variable 'self_name_length', :uint16
-#                attach_variable 'self_userstatus', :pointer
-#                attach_variable 'self_userstatus_len', :uint16
-#                attach_variable 'numfriends', :uint32
+                attach_function 'getnumfriends', [], :int
 %}
 
 /* Parse the header file to generate wrappers */
