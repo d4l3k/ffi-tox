@@ -1,11 +1,12 @@
 Gem::Specification.new do |s|
 	s.name		= 'ffi-tox'
-	s.version	= '0.0.4'
+	s.version	= '0.1.1'
 	s.date		= '2013-07-30'
 	s.summary	= "Tox bindings"
 	s.description	= "Ruby FFI bindings to Tox"
 	s.authors	= ["Tristan Rice"]
 	s.email		= 'rice@outerearth.net'
+	s.license	= "Simplified BSD"
 	s.files		= ["lib/ffi-tox.rb", 
 				"lib/ffi-tox/libtox.rb",
 				"interfaces/libtox.i"
