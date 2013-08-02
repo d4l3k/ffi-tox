@@ -7,11 +7,7 @@ module Tox
                 uint16_t = :uint16
                 uint32_t = :uint32
                 attach_variable 'self_public_key', FFI::ArrayType.new(FFI::TYPE_UINT8,32)
-#                attach_variable 'self_name', :uint8
-#                attach_variable 'self_name_length', :uint16
-#                attach_variable 'self_userstatus', :pointer
-#                attach_variable 'self_userstatus_len', :uint16
-#                attach_variable 'numfriends', :uint32
+                attach_function 'getnumfriends', [], :int
   MAX_NAME_LENGTH = 128
   MAX_USERSTATUS_LENGTH = 128
   PACKET_ID_NICKNAME = 48
@@ -25,6 +21,7 @@ module Tox
   attach_function :m_friendstatus, [ :int ], :int
   attach_function :m_sendmessage, [ :int, :pointer, uint32_t ], :int
   attach_function :setname, [ :pointer, uint16_t ], :int
+  attach_function :getself_name, [ :pointer ], uint16_t
   attach_function :getname, [ :int, :pointer ], :int
   attach_function :m_set_userstatus, [ :pointer, uint16_t ], :int
   attach_function :m_get_userstatus_size, [ :int ], :int
