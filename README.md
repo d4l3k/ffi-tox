@@ -16,3 +16,13 @@ Usage
 require 'ffi-tox'
 ```
 It uses the same syntax as the standard tox core.
+
+
+Development
+====
+
+To build the gem file run:
+```sh
+bundle
+rake generate
+```
